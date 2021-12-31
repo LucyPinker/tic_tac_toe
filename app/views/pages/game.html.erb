@@ -1,9 +1,19 @@
-
 <script>
-function nextMove() {
+function makeMove(event, move);
+  event.preventDefault();
+  const square = document.querySelector(square);
+  const moveCounter = 0
+  square.insertInnerText()
 
-}
+  document.addEventListener("click", (event) => {
+  if (//value of move counter is even) {
+    makeMove("o");
+  }
+  if (//value of move counter is odd) {
+    makeMove("x");
+  }
 </script>
+
 
 <div class="header">
   <h1>You are now playing Tic Tac Toe!</h1>
@@ -13,19 +23,26 @@ function nextMove() {
 <div class="board">
   <table>
     <tr>
-      <td class="sq-1", onclick="this.style.backgroundImage='#990000';event.preventDefault();"></td>
-      <td class="sq-2"></td>
-      <td class="sq-3"></td>
+      <td class="square" id="sq-1"></td>
+      <td class="square" id="sq-2"></td>
+      <td class="square" id="sq-3"></td>
     </tr>
     <tr>
-      <td class="sq-4"></td>
-      <td class="sq-5"></td>
-      <td class="sq-6"></td>
+      <td class="square" id="sq-4"></td>
+      <td class="square" id="sq-5"></td>
+      <td class="square" id="sq-6"></td>
     </tr>
     <tr>
-      <td class="sq-7"></td>
-      <td class="sq-8"></td>
-      <td class="sq-9"></td>
+      <td class="square" id="sq-7"></td>
+      <td class="square" id="sq-8"></td>
+      <td class="square" id="sq-9"></td>
     </tr>
   </table>
 </div>
+
+//next steps
+//get makeMove function to work on click
+//initialize a function to check winning combinations
+//use action cable to prevent needing refresh between moves
+//function to keep track of games played and wins per user
+//be able to select another user to play
