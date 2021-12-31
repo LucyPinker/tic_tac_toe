@@ -1,1 +1,21 @@
-// Specific CSS for your home-page
+.opponent{
+width: 300px;
+text-align: center;
+height: 50px;
+border: 1px solid grey;
+box-shadow: 0 0 15px rgba(0,0,0,0.1);
+border-radius: 5px;
+margin: 20px;
+padding: 10px;
+a{
+  text-decoration: none;
+}
+}
+
+ul{
+  list-style-type: none;
+}
+
+.opponent-list{
+  display: flex;
+}
